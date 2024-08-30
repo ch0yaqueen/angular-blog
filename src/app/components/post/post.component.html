@@ -1,0 +1,14 @@
+<div class=" d-flex align-items-center justify-content-center mb-3">
+    <div class="card" style="width: 18rem;">
+        <div class="ratio ratio-4x3">
+            <img src="https://images.unsplash.com/photo-1461988320302-91bde64fc8e4?ixid=2yJhcHBfaWQiOjEyMDd9&&fm=jpg&w=400&fit=max" class="card-img-top" alt="...">
+        </div>
+        <div class="card-body">
+            <h5 class="card-title fw-bold roboto">{{post.title}}</h5>
+            <p class="card-text">{{post.content}}</p>
+            <a href="#" [routerLink]="['/blog/edit', post.id]" class="btn btn-dark me-3">Edit</a>
+            <button class="btn btn-danger" (click)="onDelete()">Delete</button>
+        </div>
+        
+    </div>
+</div>
